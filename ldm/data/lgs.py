@@ -26,11 +26,6 @@ class LGS(Dataset):
         self.image_paths = [os.path.join(self.data_root, 'imgs_256_04_27', f_path) for f_path in self.metadata['images'].values]
         self.captions = [caption for caption in self.metadata['caption'].values]
 
-        print("KJSDFHJKFHKSFDJKHKFHSKDJHKFDHJFHS")
-        print(len(self.image_paths), len(self.captions))
-        print(self.image_paths[:5])
-        print(self.captions[:5])
-
         self.num_images = len(self.image_paths)
         self._length = self.num_images 
 
