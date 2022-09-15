@@ -76,7 +76,7 @@ data:
   target: main.DataModuleFromConfig
   params:
     batch_size: 1
-    num_workers: 6
+    num_workers: 8
     wrap: false
     train:
       target: ldm.data.lgs.LGS
@@ -84,7 +84,7 @@ data:
         size: 256
         set: train
         per_image_tokens: false
-        repeats: 10
+        repeats: 1
     validation:
       target: ldm.data.lgs.LGS
       params:
